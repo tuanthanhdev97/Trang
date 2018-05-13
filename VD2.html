@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin-left:  5%;
+  margin-right: 5%;
+}
+
+/* Style the header */
+.header {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+.topnav {
+    overflow: hidden;
+    background-color: rgb(179, 56, 56);
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: rgb(189, 68, 68);
+    color:white;
+}
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 30%;
+    padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+    .column {
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>
+      <IMG src ="kenh14.png" hight = "1700" width="1220">
+  </h1>
+</div>
+<div class="topnav">
+  <a href="http://kenh14.vn/star.chn">Star</a>
+  <a href="http://kenh14.vn/tv-show.chn">TVShow</a>
+  <a href="http://kenh14.vn/cine.chn">Cine</a>
+  <a href="http://kenh14.vn/musik.chn">Music</a>
+  <a href="http://kenh14.vn/fashion.chn">Fashion</a>
+  <a href="http://kenh14.vn/doi-song.chn">Đời sống</a>
+  <a href="http://kenh14.vn/an-ca-the-gioi.chn">Ăn cả thế giới</a>
+  <a href="http://kenh14.vn/xa-hoi.chn">Xã hội</a>
+  <a href="http://kenh14.vn/the-gioi.chn">Thế giới</a>
+
+</div>
+<div class="row">
+  <div class="column">
+    <h2>Thể Thao</h2>
+    <p>Thất bại đáng tiếc của U23 Việt Nam ở chung kết U23 châu Á khiến hàng triệu NHM quê nhà rơi lệ. Tuy nhiên sau khi nỗi buồn qua đi, các CĐV vẫn cảm thấy vui mừng vì thành tích Á quân của các cầu thủ, và nhiều người đã đốt pháo sáng ăn mừng thành tích này.</p>
+  </div>
+  <div class="column">
+    <h2>Âm Nhạc</h2>
+    <p>Đêm mở màn lần thứ 4 của Lễ hội Âm nhạc Quốc tế Gió mùa đã diễn ra tối 10/11 với sự có mặt của hàng nghìn khán giả. Cơn gió mùa của âm nhạc tại lễ hội diễn ra cũng vừa vặn với tiết trời Hà Nội đầu Đông, mát dịu nhẹ.</p>
+  </div>
+  <div class="column">
+    <h2>Du Lịch</h2>
+    <p>Vịnh Kotor nằm ở trung tâm Biển Adriatic ở phía tây nam Montenegro là một điểm du lịch hấp dẫn du khách bởi phong cảnh vô cùng quyến rũ với nhiều thành phố, thị trấn và làng mạc xung quanh vịnh được xây dựng từ thời trung cổ và được bảo tồn hoàn hảo. 12 địa danh dưới đây của vịnh gây được ấn tượng nhiều nhất với du khách trên toàn thế giới.</p>
+  </div>
+</div>
+</body>
+</html>
